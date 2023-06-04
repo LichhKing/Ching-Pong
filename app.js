@@ -66,6 +66,19 @@ function collision(joueur) {
         partie.joueur.y = terrain.height / 2 - HAUTEUR_JOUEUR / 2;
         partie.adversaire.y = terrain.height / 2 - HAUTEUR_JOUEUR / 2;
 
+        // Ajouter la classe pour le flash de couleur <-- Ne fonctionne pas
+        // var bordure = document.getElementById("bordure");
+        // if (joueur == partie.joueur) {
+        //     bordure.classList.add('flash-red');
+        // } else {
+        //     bordure.classList.add('flash-green');
+        // }
+
+        // setTimeout(function() {
+        //     bordure.classList.remove('flash-green');
+        //     bordure.classList.remove('flash-red');
+        // }, 500);
+
         // Réinitialiser la vitesse de la balle
         partie.balle.vitesse.x = 2;
     } else {
@@ -121,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
             y: terrain.height / 2 - HAUTEUR_JOUEUR / 2,
             x: terrain.width - LARGEUR_JOUEUR * 2,
             //Ajout d'une propriete de vitesse pour l'adversaire
-            speedRatio: 0.98
+            speedRatio: 0.90
         },
         balle: {
             //Ajout des proprietes de position
