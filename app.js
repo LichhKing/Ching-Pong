@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
             y: terrain.height / 2 - HAUTEUR_JOUEUR / 2,
             x: terrain.width - LARGEUR_JOUEUR * 2,
             //Ajout d'une propriete de vitesse pour l'adversaire
-            speedRatio: 0.90
+            speedRatio: 0.70
         },
         balle: {
             //Ajout des proprietes de position
